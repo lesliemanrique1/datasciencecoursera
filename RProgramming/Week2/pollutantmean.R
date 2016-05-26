@@ -20,7 +20,7 @@ pollutantmean <- function(directory,pollutant,id = 1:332)
 	list_files = list.files(directory, pattern = "*.csv")
 	data <- data.frame() 
 	for(i in id)
-	{
+	{getwd
 		file <- paste(directory,"/",list_files[i],sep = "") 
 		data <- rbind(data,read.csv(file))
 	}
